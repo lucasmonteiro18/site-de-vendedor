@@ -1,3 +1,5 @@
+
+
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8" />
@@ -568,32 +570,22 @@ function init(){
 
 init();
 </script>
+
+<!-- SCRIPT PARA DETECTAR PC OU CELULAR -->
+<script>
+    if (window.innerWidth <= 768) {
+        // CELULAR
+        document.getElementById("whatsFAB").style.bottom = "20px";
+        document.getElementById("whatsFAB").style.right = "20px";
+    } else {
+        // PC
+        document.getElementById("whatsFAB").style.bottom = "40px";
+        document.getElementById("whatsFAB").style.right = "40px";
+    }
+</script>
+
 <a class="fix-whatsapp" id="whatsFAB" href="#" title="Falar no WhatsApp">💬</a>
-</body>/* MOBILE */
-@media(max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero img {
-        max-width: 100% !important;
-    }
-
-    nav a {
-        margin: 0 6px;
-        font-size: 14px;
-    }
-
-    .grid {
-        grid-template-columns: 1fr !important;
-    }
-}
-
+</body>
 </html>
+
